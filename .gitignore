@@ -155,3 +155,122 @@ vite.config.ts.timestamp-*
 .nx/cache
 .nx/workspace-data
 .nx/migrate-runs
+
+
+# =========================================================
+# VahanaX - Additional Stack Ignores
+# =========================================================
+
+
+# ---------------------------------------------------------
+# Python / FastAPI
+# ---------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+.venv/
+venv/
+env/
+ENV/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+.coverage
+coverage.xml
+htmlcov/
+
+*.egg-info/
+.eggs/
+
+
+# ---------------------------------------------------------
+# Playwright
+# ---------------------------------------------------------
+playwright-report/
+test-results/
+blob-report/
+traces/
+screenshots/
+videos/
+
+
+# ---------------------------------------------------------
+# Facebook Watcher - NEVER COMMIT AUTH DATA
+# ---------------------------------------------------------
+storage_state.json
+auth.json
+cookies.json
+cookies.txt
+facebook-auth.json
+facebook-session.json
+
+sessions/
+session/
+browser-data/
+user-data/
+chrome-profile/
+facebook-profile/
+
+
+# ---------------------------------------------------------
+# Supabase Local Files
+# ---------------------------------------------------------
+.supabase/
+supabase/.temp/
+
+
+# ---------------------------------------------------------
+# Local Databases
+# ---------------------------------------------------------
+*.db
+*.sqlite
+*.sqlite3
+
+
+# ---------------------------------------------------------
+# Redis / Celery - Later
+# ---------------------------------------------------------
+dump.rdb
+celerybeat-schedule
+celerybeat.pid
+
+
+# ---------------------------------------------------------
+# Docker Local Data
+# ---------------------------------------------------------
+docker-data/
+volumes/
+
+
+# ---------------------------------------------------------
+# IDE / OS
+# ---------------------------------------------------------
+.vscode/
+.idea/
+
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+
+# ---------------------------------------------------------
+# Certificates / Private Keys
+# ---------------------------------------------------------
+*.pem
+*.key
+*.p12
+*.pfx
+
+
+# ---------------------------------------------------------
+# Temporary / Backup Files
+# ---------------------------------------------------------
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+*.old
